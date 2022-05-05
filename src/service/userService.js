@@ -1,9 +1,9 @@
 import axios from "axios";
 
 export class UserServices{
-    baseUrl= "http://localhost:8080/api/v1/usuario/all/v1";
+    baseUrl= "http://localhost:8080/api/v1/usuario/";
 
-    getAll(){
-        return axios.get(this.baseUrl+ 'all').then(res => res.data);
+    usuarioAll(){
+        return axios.get(this.baseUrl+ 'all/v1').then(res => res.data);
     }
 }
